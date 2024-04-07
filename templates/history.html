@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="history-container">
+    <div class="vertical-line"></div>
+    <div class="history-cards left">
+        <!-- Left side history cards -->
+        <div class="history-card">
+            <h3>Historical Event 1</h3>
+            <p>Description of the event</p>
+        </div>
+        <div class="history-card">
+            <h3>Historical Event 3</h3>
+            <p>Description of the event</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+    <div class="history-cards right">
+        <!-- Right side history cards -->
+        <div class="history-card">
+            <h3>Historical Event 2</h3>
+            <p>Description of the event</p>
+        </div>
+        <div class="history-card">
+            <h3>Historical Event 4</h3>
+            <p>Description of the event</p>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</div>
+{% comment %} <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const leftCards = document.querySelectorAll('.left .history-card');
+        const rightCards = document.querySelectorAll('.right .history-card');
+        let maxHeight = 0;
+      
+        leftCards.forEach((leftCard, index) => {
+          const leftCardHeight = leftCard.offsetHeight;
+          if (leftCardHeight > maxHeight) {
+            maxHeight = leftCardHeight;
+          }
+        });
+      
+        rightCards.forEach((rightCard, index) => {
+          rightCard.style.marginTop = maxHeight + 'px';
+        });
+      });
+      
+      
+
+</script> {% endcomment %}
+{% endblock %}
+
+
+
+
+{% comment %} 
+    document.addEventListener('DOMContentLoaded', function() {
+        const leftCards = document.querySelectorAll('.left .history-card');
+        const rightCards = document.querySelectorAll('.right .history-card');
+      
+        leftCards.forEach((leftCard, index) => {
+          const leftCardHeight = leftCard.offsetHeight;
+          if (index < rightCards.length) {
+            const rightCard = rightCards[index];
+            const marginTop = leftCardHeight + 20; // Adjust the margin as needed
+            rightCard.style.marginTop = marginTop + 'px';
+          }
+        });
+      });
+      
+ {% endcomment %}

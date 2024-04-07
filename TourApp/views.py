@@ -97,3 +97,4 @@ def transport(request):
 
 def places(request):
     return render(request, 'places.html')
+
