@@ -118,6 +118,12 @@ hr{
     background-color: var(--secondary-color);
     cursor: pointer;
   }
+
+  .btn:hover{
+    color: var(--white-color);
+    background-color: navy;
+    border-color: #27282a;
+  }
   
   header {
     background-image: linear-gradient(to top, var(--primary-color), transparent),
@@ -347,10 +353,6 @@ hr{
   padding: 1em;
 }
 
-/* .card{
-  margin: 0 .5rem;
-} */
-
 .image-wrapper2{
   max-width: 100%;
   height: 17em;
@@ -411,7 +413,7 @@ section#hero{
 form input{
   width: 100%;
   height: 2.5rem;
-  border: .3ps solid rgba(210, 208, 208, 0.340);
+  border: .3px solid rgba(210, 208, 208, 0.340);
   text-indent: none;
   margin-top: 2px;
   background: #eeeff1;
@@ -485,7 +487,6 @@ form .d-flex a{
   width: 90%;
 }
 
-
 /* restaurant review images slider */
 .restviews .carousel-item img {
   max-width: 40%;
@@ -494,6 +495,209 @@ form .d-flex a{
 }
  .restviews .restdes {
   padding-left: 4rem;
+ }
+
+/* contact section */
+.contact .contact_space{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start; /* Align items to the start of the cross axis */
+}
+
+.contact .contact_space .contact_img{
+  flex: 0 0 35rem;
+}
+
+.contact .contact_space .contact_img img{
+  width: 100%;
+  height: 34.9rem;
+  border-radius: .5rem;
+}
+
+.contact_img img::after{
+  background: linear-gradient(to top, var(--primary-color), transparent);
+}
+.contact .contact_space form{
+  flex: 1; /* Let the form grow to fill remaining space */
+  max-width: 50rem; /* Set maximum width for the form */
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+  border-radius: .5rem;
+  background-color: #eeeff1;
+}
+
+.contact .contact_space form legend{
+  color: #27282a;
+}
+
+.contact .contact_space form .inputbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: .5rem;
+}
+
+.contact .contact_space form .inputbox input, .contact .contact_space form textarea{
+  width: 48%;
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #333;
+  padding: 4px;
+  background: #f7f7f7;
+}
+
+.contact .contact_space form textarea{
+  height: 14rem;
+  width: 32rem;
+  border: none;
+  resize: none;
+  width: 1005;
+}
+
+.contact .contact_space form .btn{
+  height: 2.5rem;
+  width: auto;
+  align-items: center;
+}
+
+/* .contact .contact_space form .btn:hover{
+  background-color: navy;
+  border: #f56b27;
+  color: white;
+} */
+
+
+ /* footer section */
+.footer{
+  background-color: #111111;
+  padding-top: 10px;
+}
+
+.footer p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 0 15px 0;
+  color: #3d3d3d;
+}
+
+.footer a{
+  text-decoration: none;
+}
+
+.footer ul{
+  padding: 0;
+}
+
+.footer-about{
+  margin-bottom: 30px;
+}
+
+.footer .row{
+  margin-top: 20px;
+}
+
+.footer-about .footer-logo{
+  margin-left: -30px;
+  margin-bottom: 10px;
+  position: relative;
+ }
+
+ .footer-about .footer-logo img{
+  width: 200px;
+  height: 200px;
+  margin-top: -20px;
+ }
+
+ .footer-about .footer-logo h6{
+  margin-top: -25px;
+  position: absolute;
+  margin-left: 30px;
+ }
+
+ .footer-about .footer-logo p{
+  margin-top: -20px; /* Adjusted margin */
+  position: absolute; /* Added position absolute */
+  margin-left: 100px;
+ }
+
+ .footer-widget{
+  margin-bottom: 30px;
+ }
+
+ .footer-widget h6{
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+ }
+
+
+ .footer-widget ul li{
+  line-height: 36px;
+  list-style: none;
+ }
+
+ .footer-widget ul li a{
+  color: #b7b7b7;
+  font-size: 15px;
+ }
+
+ .footer-widget ul li a:hover{
+  color: #f56b27;
+ }
+
+ .footer form input{
+  display: inline-block;
+ }
+
+ .footer form button{
+  width: 4.3rem;
+  border-radius: .2rem;
+  padding: 6px;
+  margin-top: 5px;
+  display: flex;
+ }
+
+ .footer .copyright{
+  text-align: center;
+  justify-content: center;
+ }
+
+ .footer-widget .footer-newsletter{
+  color: #b7b7b7;
+ }
+
+ .footer-widget .footer-newsletter form input:focus{
+  outline: none;
+ }
+
+ .footer-widget .footer-newsletter form input{
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  padding: 15px 0;
+  border-bottom: 2px solid #ffffff;
+ }
+
+ .footer-widget .footer-newsletter form input::placeholder{
+  color: #b7b7b7;
+ }
+
+ .footer-copyright-text{
+  border-top: 1px solid rgba(225, 225, 225, 0.1);
+  padding: 20px 0;
+  margin-top: 40px;
+ }
+
+ .footer-copyright-text p{
+  color: #b7b7b7;
+  margin-bottom: 0;
  }
 
 
